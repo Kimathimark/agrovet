@@ -139,23 +139,23 @@ const Header = () => {
               transition={{ delay: 0.4 }}
               className="hidden lg:flex items-center space-x-4"
             >
-              <button
+              {/* <button
                 onClick={() => setIsSearchOpen(!isSearchOpen)}
                 className="p-2 text-gray-600 hover:text-green-600 transition-colors touch-target relative"
               >
                 <Search className="h-5 w-5" />
               </button>
-              
-              <button className="p-2 text-gray-600 hover:text-green-600 transition-colors touch-target relative">
+               */}
+              {/* <button className="p-2 text-gray-600 hover:text-green-600 transition-colors touch-target relative">
                 <Heart className="h-5 w-5" />
                 {favoriteCount > 0 && (
                   <Badge className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-red-500 text-white text-xs flex items-center justify-center p-0">
                     {favoriteCount}
                   </Badge>
                 )}
-              </button>
+              </button> */}
 
-              <Button
+              {/* <Button
                 asChild
                 className="bg-green-600 hover:bg-green-700 btn-mobile group"
               >
@@ -163,7 +163,7 @@ const Header = () => {
                   <Phone className="mr-2 h-4 w-4 group-hover:animate-bounce" />
                   Call Now
                 </a>
-              </Button>
+              </Button> */}
             </motion.div>
 
             {/* Mobile Actions */}
