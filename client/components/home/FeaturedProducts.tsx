@@ -107,7 +107,7 @@ const FeaturedProducts = () => {
               variants={itemVariants}
               whileHover={{ y: -10, scale: 1.02 }}
               transition={{ duration: 0.3 }}
-              onHoverStart={() => setSelectedProduct(product.id)}
+              // onHoverStart={() => setSelectedProduct(product.id)}
               onHoverEnd={() => setSelectedProduct(null)}
             >
               <Card className="h-full border-0 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden group bg-white relative">
@@ -134,10 +134,10 @@ const FeaturedProducts = () => {
                   </div>
                   
                   {/* Rating */}
-                  <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 flex items-center space-x-1">
+                  {/* <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1 flex items-center space-x-1">
                     <Star className="h-3 w-3 text-yellow-500 fill-current" />
                     <span className="text-xs font-medium text-gray-800">{product.rating}</span>
-                  </div>
+                  </div> */}
                   
                   {/* Stock Status */}
                   {product.inStock && (
@@ -267,7 +267,7 @@ const FeaturedProducts = () => {
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="flex items-center justify-between pt-3 border-t border-gray-200">
+                  {/* <div className="flex items-center justify-between pt-3 border-t border-gray-200">
                     <div className="flex space-x-2">
                       <motion.button
                         whileHover={{ scale: 1.05 }}
@@ -285,7 +285,7 @@ const FeaturedProducts = () => {
                       <BookOpen className="mr-1 h-3 w-3" />
                       View Details
                     </Button>
-                  </div>
+                  </div> */}
                 </CardContent>
               </Card>
             </motion.div>
